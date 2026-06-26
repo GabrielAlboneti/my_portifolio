@@ -1,24 +1,129 @@
 :root {
-   --primary-color: #111
+   --background-color: hsla(196, 10%, 21%, 1);
+   --font-color: hsla(71, 47%, 88%, 1);
+   --primary-color: hsla(128, 80%, 33%, 1);
+   --secondary-color: hsla(196, 31%, 49%, 1);
+   --orange: hsla(20, 71%, 65%, 1);
 }
-
+/* Elements */
 
 html {
+   background-color: var(--background-color);
+   color: var(--font-color);
    font-size: 10px;
+   scroll-behavior: smooth;
+   overflow-x: hidden;
 }
 
 * {
    padding: 0;
    margin: 0;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 body {
-   margin-top: 30px;
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: center;
-   align-items: flex-start;
+   font-size: 3rem;
+}
+
+h2 {
+   font-size: 6rem;
+}
+
+h3 {
+   font-size: 5rem;
+}
+
+h4 {
+   font-size: 3rem;
+}
+
+h5 {
    font-size: 2rem;
 }
+
+header {
+   min-width: 100vw;
+   min-height: 5rem;
+   display: flex;
+   flex-flow: row nowrap;
+   position: fixed;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 2.5rem;
+}
+
+footer {
+   min-width: 100vw;
+   min-height: 8rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   color: inherit;
+   text-decoration: none;
+}
+
+a:hover {
+   color: var(--primary-color);
+   text-decoration: underline;
+   transition: 200ms;
+}
+
+/* Classes */
+
+.full-screen {
+   min-height: 100vh;
+}
+
+.flex-list {
+   display: flex;
+   flex-flow: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.flex-list ul {
+   margin-left: 2rem;
+}
+
+.content-flex {
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.grid-content {
+   display: grid;
+}
+
+header div.nav {
+   margin-right: 2rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+div.nav nav {
+   margin-right: 2rem;
+}
+
+.secondary-background {
+   background-color: var(--secondary-color);
+   color: var(--background-color);
+}
+
+#home-link {
+   display: flex;
+   margin-left: 2rem;
+   justify-items: flex-start;
+}
+
+/* Media queries */
+
