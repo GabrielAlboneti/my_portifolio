@@ -8,10 +8,16 @@
    </head>
    <body>
       <header>
-         <nav><a href="#" id="home-link">Home</a></nav>
+         <nav>
+            <!-- TODO: Change href to # -->
+            <a href="http://127.0.0.1:5500/src/index.html" id="home-link"
+               >Home</a
+            >
+         </nav>
          <div class="nav">
             <nav><a href="#courses">Cursos</a></nav>
             <nav><a href="#future-courses">Objetivos</a></nav>
+            <nav><a href="#contacts">Contato</a></nav>
             <nav><a href="#footer">placeholder</a></nav>
          </div>
       </header>
@@ -21,45 +27,106 @@
       </div>
 
       <div class="content-flex full-screen secondary-background" id="courses">
-         <h3>Cursos que eu fiz</h3>
-         <p>Esta é uma lista de todos os cursos que fiz até hoje.</p>
+         <div class="flex-title">
+            <h3>Cursos que eu fiz</h3>
+            <p>Esta é uma lista de todos os cursos que fiz até hoje.</p>
+         </div>
          <div class="grid-content">
             <ul>
                <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
+                  <a
+                     href="https://www.udemy.com/course/python-3-do-zero-ao-avancado/"
+                  >
+                     <img
+                        src="https://otaviomiranda.com.br/imgs/curso-de-python.webp"
+                        alt="Foto do Professor Otávio Miranda e a logo do Python"
+                        class="image-card"
+                     />
+                  </a>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Soluta voluptatum illum architecto itaque ratione autem,
+                     explicabo numquam, placeat hic necessitatibus deleniti
+                     recusandae tenetur nemo cumque!
+                  </p>
                </li>
                <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
+                  <a href="">
+                     <img
+                        src="https://img-c.udemycdn.com/course/240x135/5757832_daee_6.jpg"
+                        alt=""
+                        class="image-card"
+                     />
+                  </a>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Illo, deleniti? At consequatur iure rem suscipit, fugiat
+                     officiis deleniti illo quae facilis voluptates cumque,
+                     reiciendis inventore?
+                  </p>
                </li>
                <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
+                  <a href="">
+                     <img
+                        src="https://img-c.udemycdn.com/course/240x135/765242_2578_6.jpg"
+                        alt="Foto com Kirill Eremenko e a logo do R"
+                        class="image-card"
+                     />
+                  </a>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Illo, deleniti? At consequatur iure rem suscipit, fugiat
+                     officiis deleniti illo quae facilis voluptates cumque,
+                     reiciendis inventore?
+                  </p>
                </li>
                <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
+                  <a href="">
+                     <img
+                        src="https://img-c.udemycdn.com/course/240x135/950390_270f_7.jpg"
+                        alt="Foto com "
+                        class="image-card"
+                     />
+                  </a>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Illo, deleniti? At consequatur iure rem suscipit, fugiat
+                     officiis deleniti illo quae facilis voluptates cumque,
+                     reiciendis inventore?
+                  </p>
                </li>
                <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
+                  <a href="">
+                     <img src="" alt="" />
+                  </a>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Illo, deleniti? At consequatur iure rem suscipit, fugiat
+                     officiis deleniti illo quae facilis voluptates cumque,
+                     reiciendis inventore?
+                  </p>
                </li>
                <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
+                  <a href="">
+                     <img src="" alt="" />
+                  </a>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Illo, deleniti? At consequatur iure rem suscipit, fugiat
+                     officiis deleniti illo quae facilis voluptates cumque,
+                     reiciendis inventore?
+                  </p>
                </li>
                <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
-               </li>
-               <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
-               </li>
-               <li>
-                  <a href=""><img src="" alt="" /></a>
-                  <p class="description"></p>
+                  <a href="">
+                     <img src="" alt="" />
+                  </a>
+                  <p class="description">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Illo, deleniti? At consequatur iure rem suscipit, fugiat
+                     officiis deleniti illo quae facilis voluptates cumque,
+                     reiciendis inventore?
+                  </p>
                </li>
             </ul>
          </div>
@@ -69,13 +136,17 @@
          <h3>Coisas que eu aprenderei aqui</h3>
       </div>
 
+      <div class="content-flex full-screen" id="contacts">
+         <h3>Entre em contato</h3>
+      </div>
+
       <footer id="footer">
-         <p>Feito por Gabriel Alboneti :)</p>
+         <p class="signature">Feito por Gabriel Alboneti :)</p>
          <div class="flex-list">
             <p>Mapa do site</p>
             <ul>
                <li>
-                  <nav><a href="#home">Início</a></nav>
+                  <nav><a href="#">Início</a></nav>
                </li>
                <li>
                   <nav><a href="#courses">Cursos</a></nav>
@@ -83,7 +154,6 @@
                <li>
                   <nav><a href="#future-courses">Objetivos</a></nav>
                </li>
-               <!-- <li><a href="#"></a></li> -->
             </ul>
          </div>
       </footer>
